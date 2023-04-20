@@ -1,5 +1,4 @@
-Source code for paper
-"Computational pathology infer clinically relevant protein levels and drug efficacy in breast cancer by weakly supervised contrastive learning"  
+# Computational pathology infer clinically relevant protein levels and drug efficacy in breast cancer by weakly supervised contrastive learning
 
 It is a multi-stage model
 Firstly, [MoCo](https://arxiv.org/pdf/1911.05722.pdf) is trained to extract tile-level features, 
