@@ -1,15 +1,15 @@
-Source code for
+Source code for paper
 "Computational pathology infer clinically relevant protein levels and drug efficacy in breast cancer by weakly supervised contrastive learning"  
 
-It is a multi-stage model. 
-Firstly, [MoCo](https://arxiv.org/pdf/1911.05722.pdf) is used to unsupervised extract tile-level features, 
+It is a multi-stage model
+Firstly, [MoCo](https://arxiv.org/pdf/1911.05722.pdf) is trained to extract tile-level features, 
 then the attention-pooling is used to aggregate tile-level features into slide-level features, 
-and finally it is used in the downstream tasks,including tumor diagnosis, protein level prediction and drug response prediction, as well as a prognostic risk score.
+and finally it is used in the downstream tasks, including tumor diagnosis, protein level prediction and drug response prediction, as well as a prognostic risk score.
 
 
 ## WSI segmentation and tiling
 You can download your own wsi dataset to the directory slides, 
-then run create_patches_fp.py to seg and tile wsis, 
+then run create_patches_fp.py to segment and tiling wsis, 
 adjust the parameters according to your needs.  
 For example, you can use following command for segment and tile.  
 
