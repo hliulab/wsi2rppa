@@ -19,7 +19,10 @@ Then the coordinate files will be saved to ```tile_results/patches``` and the ma
 Based on the previous step, you can randomly sample tiles for next step.
 
 ## Train contrastive learning model
-We use [Openmmlab](https://openmmlab.org.cn/) to train contrastive learning model.
+We use [Openmmlab](https://openmmlab.org.cn/) to train contrastive learning model. You should install mmselfsup according to its official documentation, and prepare your own dataset. Then, run the command:
+``` shell
+python tools/train.py configs/selfsup/mocov2/mocov2_resnet50_8xb32-coslr-200e_in1k.py
+```
 
 ## Extract tile-level features
 Run extract_features_fp.py to extract the tile-level features.
