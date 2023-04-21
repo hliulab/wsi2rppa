@@ -21,6 +21,7 @@ Based on the previous step, you can randomly sample tiles for next step.
 ## Train contrastive learning model
 The [Openmmlab](https://openmmlab.org.cn/) is used to train contrastive learning model. You should install mmselfsup according to its official documentation, and prepare your own dataset. Then, run the command:
 ``` shell
+conda activate openmmlab
 python tools/train.py configs/selfsup/mocov2/mocov2_resnet50_8xb32-coslr-200e_in1k.py
 ```
 
