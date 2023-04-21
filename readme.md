@@ -18,10 +18,10 @@ When you run this command, it will run in default parameters, if you want to run
 Then the coordinate files will be saved to ```tile_results/patches``` and the mask files that show contours of slides will be saved to ```tile_results/masks```.
 Based on the previous step, you can randomly sample tiles for next step.
 
-## Train Contrastive Learning Model
+## Train contrastive learning model
 We use [Openmmlab](https://openmmlab.org.cn/) to train contrastive learning model.
 
-## Extract tile-level Features
+## Extract tile-level features
 Run extract_features_fp.py to extract the tile-level features.
 For example, you can use following command:  
 
@@ -31,7 +31,7 @@ python extract_features_fp.py --data_h5_dir ../tile_results --data_slide_dir ../
 The above command will use the trained MoCo model in ```model_path``` to extract tile features in ```data_slide_dir```
 and save the features to ```feat_dir```. 
 
-## Train Protein Level Prediction Model
+## Train protein level prediction model
 Run train/train_protein_level.py to perform downstream regression task such as prediction of protein level. For example:  
 ``` shell
 python train_protein_level.py --feature_path ../FEATURES --train_csv_path xxx.csv --val_csv_path xxx.csv
