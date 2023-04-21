@@ -48,7 +48,7 @@ dataset_csv/protein level
 	     ├── ...
 	     ├── val_dataset_3.csv
 ```
-## Train Tumor Diagnosis Model
+## Train tumor diagnosis model
 Run train/train_tumor.py to perform downstream classification task. For example:  
 ``` shell
 python train_tumor.py --lr 0.0003 --epochs 30 --wsi_path xxx --train_label_path xxx.csv --val_label_path xxx.csv
