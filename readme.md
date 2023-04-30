@@ -1,4 +1,4 @@
-# Computational pathology infer clinically relevant protein levels and drug efficacy in breast cancer by weakly supervised contrastive learning
+# Computational pathology infers clinically relevant protein levels and drug responses in breast cancer by weakly supervised contrastive learning
 
 The model include three stages. Firstly, [MoCo](https://arxiv.org/pdf/1911.05722.pdf) is trained to extract tile-level features, 
 then the attention-pooling is used to aggregate tile-level features into slide-level features, 
